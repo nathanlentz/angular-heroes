@@ -1,3 +1,5 @@
+const { registerPlugin, configValidator} = require('@scullyio/scully');
+
 const api = require("marvel-api");
 
 function myHeroesPlugin(route, config) {
