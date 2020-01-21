@@ -1,0 +1,7 @@
+<div class="hero-detail">
+  <a routerLink="/heroes">< Back to Heroes</a>
+  <ng-container *ngIf="hero$ | async as hero">
+    <h1>{{hero.name}}</h1>
+    <p>{{hero.description}}</p>
+  </ng-container>
+</div>

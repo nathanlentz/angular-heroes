@@ -1,0 +1,6 @@
+<div class="heroes-list" *ngIf="heroes$ | async as heroes">
+  <hero-card *ngFor="let hero of heroes" [hero]="hero"></hero-card>
+</div>
+<a (click)="back()" *ngIf="page > 0">Back</a> 
+  Page {{page}}
+<a (click)="next()">Next</a>
